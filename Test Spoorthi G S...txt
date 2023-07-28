@@ -1,0 +1,242 @@
+1. The concept of Method overloading in Java it overloads with in the paramter.
+ex : class Person{
+       
+      static void run()
+       {
+        System.out.println("invoking main in run");
+       }
+
+      staic vioid eat(String name, int age)
+      {
+       System.out.println("invoking main in eat");
+	System.out.println("The name is :"+name);
+	System.out.println("The age is :"+age);
+      }
+
+      staic void sleep(String name, long phno,String email )
+      {
+       System.out.println("invoking main in eat");
+	System.out.println("The name is :"+name);
+	System.out.println("The phno is :"+phno);
+	System.out.println("The email is :"+email);
+      }
+
+
+       public static void main(String[] args)
+       {
+        System.out.println("invoking main in Person);
+	Person.run();
+	Person.eat("Spoorthi",22);
+	Person.eat("Spoorthi",7975153403l,"spoo2gmail.com");
+	
+       }
+}
+
+
+4. class Person{
+	String email;
+	int age;
+	long phno;
+	
+	System.out.println("invoking main in Person");
+
+	Person()
+	{
+	System.out.println("The person info");
+	System.out.println("The email is "+email);
+	System.out.println("The age is "+age);
+	System.out.println("The phno is "+phno);
+	}
+
+	Person(String email)
+	{
+	System.out.println("The person info");
+	this.email=email;
+	}
+	
+	Person(String email,int age)
+	{
+	System.out.println("The person info");
+	this.email=email;
+	this.age=age;
+	}
+
+	Person(String email,int age,long phno)
+	{
+	System.out.println("The person info");
+	this.email=email;
+	this.age=age;
+	this.phno=phno;
+	}
+
+	public static void main(String[] args)
+       {
+        System.out.println("invoking main in PersonKiler);
+	Person person = new Person();
+	System.out.println(person.email);
+	System.out.println(person.age);
+	System.out.println(person.long);
+	System.out.println("===========");
+	
+	Person person1 = new Person("spoo@gmail.com");
+	System.out.println(person1.email);
+	System.out.println(person1.age);
+	System.out.println(person1.long);
+	
+	System.out.println("===========");
+	
+	Person person2 = new Person("spoo@gmail.com",22);
+	System.out.println(person2.email);
+	System.out.println(person2.age);
+	System.out.println(person2.long);
+	
+	System.out.println("===========");
+	
+	Person person1 = new Person("spoo@gmail.com",25,7975153403l);
+	System.out.println(person1.email);
+	System.out.println(person1.age);
+	System.out.println(person1.long);
+	
+	}
+}
+
+
+7. class Mechanic{
+	String name;
+	long phno;
+	int age;
+	String location;
+	
+	Mechanic()
+	{
+	super();
+	System.out.println("invoking main in Mechanic");
+	}
+	
+	Mechanic(String name)
+	{
+	this.name=name;
+	System.out.println("invoking main String in Mechanic");
+	}
+	
+	Mechanic(String name,long phno)
+	{
+	this(name);
+	this.phno=phno;
+	System.out.println("invoking main String,long in Mechanic");
+	}
+
+	Mechanic(String name,long phno,int age)
+	{
+	this(name,phno);
+	this.age =age;
+	System.out.println("invoking main String,long,int in Mechanic");
+	}
+
+	Mechanic(String name,long phno,int age,String location)
+	{
+	this(name,phno,age);
+	this.location =locationn;
+	System.out.println("invoking main String,long,int,String in Mechanic");
+	}
+
+	public static void main(String[] args)
+       {
+        System.out.println("invoking main in MechanicKiler);
+ 	Mechanic mechanic = new Mechanic("Deepak",9845058504l);
+	
+	Mechanic mechanic1 = new Mechanic("Deepak",9845058504l,24,"Kengri");
+
+	}
+}
+
+
+2. The different kinds of varibale is literal,constructor,methods,reference.
+constructor: class Person{
+	String email;
+	int age;
+	long phno;
+	
+	System.out.println("invoking main in Person");
+
+	Person()
+	{
+	System.out.println("invoking main in Personinfo")
+	}
+
+	public static void main(String[] args)
+       {
+        System.out.println("invoking main in PersonKiler);
+	Person person = new Person();
+	System.out.println(person.email);
+	System.out.println(person.age);
+	System.out.println(person.long);
+	}
+}
+
+methods:
+	class Person{
+       
+      static void run()
+       {
+        System.out.println("invoking main in run");
+       }
+
+ public static void main(String[] args)
+       {
+        System.out.println("invoking main in Person);
+	Person.run();
+}
+}
+
+refernce:
+       datatype reftype = values;
+
+
+3. heap: the heap has within the stackmemory.
+   stackmemory : the stackmemory as main.
+
+
+5. class Person{
+       
+      instance void run()
+       {
+        System.out.println("invoking main in run");
+       }
+
+      instance vioid eat(String name, int age)
+      {
+       System.out.println("invoking main in eat");
+	System.out.println("The name is :"+name);
+	if(name!=null)
+	{
+	System.out.println("vaild");
+	}
+	else{
+	System.err.println("invalid")
+	return;
+	}
+	System.out.println("The age is :"+age);
+
+      }
+
+      instance void sleep(String name, long phno,String email )
+      {
+       System.out.println("invoking main in eat");
+	System.out.println("The name is :"+name);
+	System.out.println("The phno is :"+phno);
+	System.out.println("The email is :"+email);
+      }
+
+
+       public static void main(String[] args)
+       {
+        System.out.println("invoking main in Person);
+	Person.run();
+	Person.eat("Spoorthi",22);
+	Person.eat("Spoorthi",7975153403l,"spoo2gmail.com");
+	
+       }
+}
+
+
